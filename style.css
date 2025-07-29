@@ -3,7 +3,7 @@
 *::before {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
@@ -13,79 +13,73 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    border: 5px solid red;
+    background-color: #f0f0f0;
 }
 
 header {
-    background-color: aqua;
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid red;
-}
-
-main {
-    height: 85vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-}
-
-.one {
-    background-color: rgb(238, 238, 181);
-    width: 600px;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
+    background-color: #1F2937;
+    color: aliceblue;
+    width: 100%;
+    padding: 10px 0;
     text-align: center;
 }
 
-.one h3 {
-    margin-top: 10px;
+main {
+    background-color: #f1f5ff;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Score Panel */
+.one {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .one p {
-    border: 5px solid rgb(0, 0, 0);
+    border: 5px solid black;
     width: 100px;
     height: 100px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Player Choices */
 .two {
-    background-color: beige;
-    width: 800px;
-    height: auto;
+    width: 90%;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .two h3 {
-    margin-bottom: 10px;
-}
-
-.two img {
-    width: 200px;
+    margin-bottom: 20px;
 }
 
 .choose {
-    width: 800px;
-    height: auto;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .choose div {
@@ -95,63 +89,84 @@ main {
     gap: 10px;
 }
 
-.choose button {
-    width: 80px;
+.two img {
+    width: 180px;
+    border: 4px solid black;
+    border-radius: 5px;
 }
 
+.choose button {
+    width: 90px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Optional disabled style for JS */
+.choose button:disabled,
+.choose button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Computer Image */
 .computer {
-    background-color: rgb(238, 238, 181);
-    width: 400px;
-    height: auto;
+    width: 90%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.computer h3 {
-    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .computer img {
-    width: 200px;
-    margin: 10px 0px;
+    width: 180px;
+    margin-top: 10px;
+    border: 4px solid black;
+    border-radius: 5px;
 }
 
+/* Result Area */
 .three {
-    background-color: beige;
-    width: 400px;
-    height:200px;
+    width: 90%;
+    max-width: 400px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-/* .three h3 {
-    
-} */
-
 .three p {
+    height: 120px;
+    width: 100%;
+    border: 5px solid black;
+    background-color: white;
+    font-size: 2.8rem;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 400px;
-    border: 5px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-    font-size: 4rem;
-    font-weight: bold;
 }
 
 .three button {
     width: 80px;
+    padding: 6px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {
-    background-color: aqua;
+    background-color: #1F2937;
+    color: aliceblue;
     height: 5vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

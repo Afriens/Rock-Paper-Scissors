@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissors</title>
-    <link href="./style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors</title>
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Rock - Paper - Scissors</h1>
+        <h1>ROCK! - PAPER! - SCISSORS!</h1>
         <h2>First to 5 Points, Wins</h2>
     </header>
     <main>
         <section class="one">
             <div>
                 <h3>Human</h3>
-                <p>1</p>
+                <p class="human-score">0</p>
             </div>
             <div>
                 <h3>Computer</h3>
-                <p>5</p>
+                <p class="computer-score">0</p>
             </div>
         </section>
+
         <section class="two">
             <h3>Make your Choice</h3>
             <div class="choose">
                 <div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqSdJBqLbq3SdEVSbabtFx1l84vkxK0svgrGREpqpBv2QQAkq1mtLzVOdmOt6YBnpS9U&usqp=CAU" alt="first img">
-                 <button>CLick</button>
-                </div>
-                 <div>
-                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqSdJBqLbq3SdEVSbabtFx1l84vkxK0svgrGREpqpBv2QQAkq1mtLzVOdmOt6YBnpS9U&usqp=CAU" alt="second img">
-                 <button>CLick</button>
+                    <img src="img/Paper.jpg" alt="paper image">
+                    <button class="myChoice" value="Paper">Paper</button>
                 </div>
                 <div>
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqSdJBqLbq3SdEVSbabtFx1l84vkxK0svgrGREpqpBv2QQAkq1mtLzVOdmOt6YBnpS9U&usqp=CAU" alt="third img">
-                  <button>CLick</button>
+                    <img src="img/Rock.jpg" alt="rock image">
+                    <button class="myChoice" value="Rock">Rock</button>
+                </div>
+                <div>
+                    <img src="img/Scissors.jpg" alt="scissors image">
+                    <button class="myChoice" value="Scissors">Scissors</button>
                 </div>
             </div>
         </section>
+
         <section class="computer">
             <h3>Computer</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtqSdJBqLbq3SdEVSbabtFx1l84vkxK0svgrGREpqpBv2QQAkq1mtLzVOdmOt6YBnpS9U&usqp=CAU" alt="computer choose img">  
+            <img class="computer-img" src="img/Question.jpg" alt="computer choice" />
         </section>
+
         <section class="three">                     
             <h3>Result</h3>
-            <p>SOMETHING</p>
-            <button>Reset</button>
+            <p></p>
+            <button id="resetBtn">Reset</button>
         </section>
     </main>
+
     <footer>
         <p>Copyright © Afrien_art Project 2025</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
